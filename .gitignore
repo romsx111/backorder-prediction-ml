@@ -216,3 +216,61 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# macOS
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env
+
+# Raw and processed datasets
+data/raw/*
+data/processed/*
+
+# Keep folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Large data files
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.zip
+*.7z
+
+# Trained models
+models/*
+!models/.gitkeep
+*.pkl
+*.pickle
+*.joblib
+
+# Tableau temporary files
+*.hyper
+*.log
+
+# IDE settings
+.vscode/
+.idea/
+
+# Python distribution
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+*.tmp
+*.temp
