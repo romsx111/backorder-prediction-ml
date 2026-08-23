@@ -72,6 +72,7 @@ def load_data():
     project_root = Path(__file__).resolve().parents[1]
 
     possible_paths = [
+	project_root / "app" / "backorder_dashboard_sample.csv",
         project_root / "data" / "processed" / "backorder_dashboard.csv",
         project_root / "data" / "backorder_dashboard.csv",
         project_root / "backorder_dashboard.csv",
