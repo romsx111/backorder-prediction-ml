@@ -110,3 +110,75 @@ The close performance between the validation and untouched test sets indicates t
 
 ---
 
+## 📊 Tableau Dashboard
+
+The model outputs were translated into an interactive Tableau dashboard designed to support material planners in monitoring backorder risk and identifying the SKUs that require the most attention.
+
+The dashboard includes:
+
+- **Material Risk Command Center** — overall view of predicted backorder exposure and planner priorities
+- **Risk Drivers** — analysis of the operational factors associated with backorder risk
+- **Model Performance** — evaluation of the final classifier and prediction outcomes
+- **SKU Detail** — material-level consultation including inventory, demand, supply conditions, and planner recommendation
+
+The dashboard converts predicted probabilities into operational risk categories and planner priorities, allowing users to move from model performance to material-level decision support.
+
+### 🔗 Live Dashboard
+
+[View the interactive Tableau dashboard](https://public.tableau.com/views/BackorderPredictionMaterialRiskPlanning/MaterialRiskCommandCenter_?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+---
+
+## 📦 Material Risk Planner — Streamlit App
+
+As an additional operational layer, I developed a Streamlit application that allows planners to interact directly with the model outputs.
+
+The application provides two decision-support tools:
+
+### 🔎 SKU Consultation
+
+Users can search for an individual SKU and review:
+
+- Backorder probability
+- Risk level
+- Planner priority
+- Current inventory and in-transit quantities
+- Local backorder quantity
+- Demand forecasts
+- Supplier lead time and performance
+- Past-due quantities
+- Current backorder status
+- Automated planner recommendation
+
+### 🏭 BOM / Production Material Risk Check
+
+Users can enter multiple SKUs required for a production plan or Bill of Materials (BOM).
+
+The application then:
+
+- Checks whether the required materials are available in the dataset
+- Identifies High, Elevated, Moderate, and Low risk materials
+- Evaluates overall production readiness
+- Prioritizes the most critical SKUs
+- Provides recommended planner actions for materials requiring attention
+
+
+### 🔗 Live Application
+
+[Open the Material Risk Planner](https://material-risk-planner.streamlit.app/)
+
+> **Demo note:** The deployed application uses a curated sample of 18,821 SKUs from the final model output to provide a lightweight interactive demonstration. The sample preserves all High-risk SKUs and representative observations from the remaining risk levels. The complete dataset was used for model development and evaluation.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **Pandas**
+- **Scikit-learn**
+- **Imbalanced-learn / SMOTE**
+- **Matplotlib**
+- **Jupyter Notebook**
+- **Tableau**
+- **Streamlit**
+- **Git & GitHub**
