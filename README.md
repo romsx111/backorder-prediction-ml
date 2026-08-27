@@ -182,3 +182,9 @@ The application then:
 - **Tableau**
 - **Streamlit**
 - **Git & GitHub**
+
+---
+
+### 🔗 Presentation
+
+[Open the PPT](https://docs.google.com/presentation/d/1yNm_kkvQTS5ZcKgCuP57d-MQ-TPndU0s/edit?usp=sharing&ouid=103640935633235163391&rtpof=true&sd=true)
